@@ -10,17 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView textview;
-    private Button button;
     private string text = "Hello Debugging!";
+    private TextView textview = findViewById(R.id.my_textview);
+    private Button button = findViewById(R.id.my_button);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        textview = findViewById(R.id.my_textview);
-        button = findViewById(R.id.my_button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
